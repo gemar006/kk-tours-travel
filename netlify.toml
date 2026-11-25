@@ -1,31 +1,7 @@
 
-[build]
-  publish = "."
-
-# Redirect www to non-www
 [[redirects]]
-  from = "https://www.kktourstravel.in/*"
+  from = "/*"
   to = "https://kktourstravel.in/:splat"
   status = 301
   force = true
-
-# Redirect Netlify subdomain to custom domain
-[[redirects]]
-  from = "https://kktourstravel.netlify.app/*"
-  to = "https://kktourstravel.in/:splat"
-  status = 301
-  force = true
-
-# Redirect HTTP to HTTPS
-[[redirects]]
-  from = "http://kktourstravel.in/*"
-  to = "https://kktourstravel.in/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "http://www.kktourstravel.in/*"
-  to = "https://kktourstravel.in/:splat"
-  status = 301
-  force = true
-
+  conditions = {Host = ["kk-tours-travel.netlify.app"]}
