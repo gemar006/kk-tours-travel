@@ -1,7 +1,4 @@
 
-[[redirects]]
-  from = "/*"
-  to = "https://kktourstravel.in/:splat"
-  status = 301
-  force = true
-  conditions = {Host = ["kk-tours-travel.netlify.app"]}
+[[edge_functions]]
+  function = "redirect-domain"
+  path = "/*"
