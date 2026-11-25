@@ -1,0 +1,74 @@
+backend:
+  name: github
+  repo: gemar006/kk-tours-travel
+  branch: main
+
+site_url: https://kktourstravel.in
+display_url: https://kktourstravel.in
+logo_url: https://kktourstravel.in/images/jaisalmer-fort.jpg
+
+media_folder: "images/blog"
+public_folder: "/images/blog"
+
+publish_mode: simple
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "blog"
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} — {{date}}"
+    sortable_fields: ["date", "title"]
+    view_filters:
+      - label: "Published"
+        field: "draft"
+        pattern: false
+      - label: "Drafts"
+        field: "draft"
+        pattern: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        required: true
+      - label: "URL Slug"
+        name: "slug"
+        widget: "string"
+        required: true
+        hint: "English letters and hyphens use karein; e.g. jaisalmer-taxi-guide"
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        required: true
+      - label: "Short SEO Description"
+        name: "description"
+        widget: "text"
+        required: true
+        hint: "About 140–160 characters."
+      - label: "Featured Image"
+        name: "image"
+        widget: "image"
+        required: false
+      - label: "Image Alt Text"
+        name: "image_alt"
+        widget: "string"
+        required: false
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options: ["Jaisalmer Travel", "Taxi Service", "Desert Safari", "Tanot & Longewala", "Travel Tips"]
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+      - label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: false
+      - label: "Blog Content"
+        name: "body"
+        widget: "markdown"
+        required: true
