@@ -1,3 +1,5 @@
+[build]
+  publish = "."
 
 [[edge_functions]]
   function = "redirect-domain"
