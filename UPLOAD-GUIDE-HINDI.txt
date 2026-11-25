@@ -1,0 +1,33 @@
+KK TOURS & TRAVEL — WEBSITE UPLOAD GUIDE
+
+इस ZIP में वेबसाइट के मुख्य सभी पेज हैं:
+- index.html (Home)
+- taxi-service.html
+- tour-packages.html
+- day-tours.html
+- about-us.html
+- contact.html
+- assets फोल्डर (CSS और JavaScript)
+- images फोल्डर
+
+फोटो बाद में images फोल्डर में डालें। फाइलों के नाम बिल्कुल ऐसे रखें:
+jaisalmer-fort.jpg
+jaisalmer-fort-card.jpg
+maruti-dzire.jpg
+kk-taxi-fleet.png
+jaisalmer-local-tour.jpg
+kuldhara-village.jpg
+ranau-desert.jpg
+sam-dunes.jpg
+tanot-mata.jpg
+
+ध्यान दें: फोटो ZIP में शामिल नहीं हैं। फोटो बाद में जोड़ी जा सकती हैं। अभी किसी फोटो के न मिलने पर ग्राहक को निर्देश वाला टेक्स्ट या broken-image icon नहीं दिखेगा; उसकी जगह वेबसाइट की सुनहरी रेगिस्तानी थीम वाला डिज़ाइन दिखाई देगा।
+
+Netlify पर अपलोड करने के चरण:
+1. ZIP को डाउनलोड करके Extract All करें।
+2. निकले हुए फोल्डर में index.html, बाकी HTML पेज, assets और images फोल्डर एक साथ होने चाहिए।
+3. अपनी फोटो images फोल्डर में ऊपर दिए नाम से रखें।
+4. पूरा वेबसाइट फोल्डर Netlify Drop पर अपलोड करें। केवल index.html अपलोड न करें।
+5. अपलोड के बाद सभी पेज, Call और WhatsApp बटन टेस्ट करें।
+
+आपके Google Ads ID AW-18532461887, Conversion Label AW-18532461887/vyjHCJzJ46gdEL_a-4RF और WhatsApp/Call नंबर +91 82332 80601 रखे गए हैं।
